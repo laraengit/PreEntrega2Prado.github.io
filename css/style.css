@@ -7,29 +7,53 @@
 }
 
 html{
-    height: 100%;
+    /* height: 100%; */
 }
 
 body {
-    /* padding-bottom: 60px;
-    min-height: calc(100% - 60px );
-    position: relative; */
-    min-height: 160%;
-    /* position: relative; */
-    /* display: flex;
-    flex-direction: column; */
+    
+/*     min-height: 160%;
+ */    
     
 
     
 }
 
+/* Disposición total en GRID*/
 
-
-.header {
-    position: fixed;
-    top: 0;
-    background-color: #eef4f1c8;
+/* Index */
+.gridBody {
+    display: grid;
     width: 100%;
+    height:100vh;
+    grid-template-areas:
+    "encabezado  encabezado"
+    "principal principal "
+    "seccion seccion"
+    "pie pie";
+    grid-template-columns:1fr 1fr;
+}
+.gridHeader {
+    grid-area: encabezado;
+}
+.gridMain {
+    grid-area: principal;
+}
+.gridSection {
+    grid-area: seccion;
+}
+
+.gridFooter {
+    grid-area: pie;
+}
+
+
+/* Voy por partes */
+.header {
+   /*  position: fixed;
+    top: 0; */
+    background-color: #eef4f1c8;
+    /* width: 100%; */
     height: 100px;
     /* left: 35%; */
 	/* position: fixed; */
@@ -38,9 +62,12 @@ body {
 	z-index: 1111 */
     /* display: inline; */
     /* padding: 20px; */
-    
+    display: flex;
     z-index: 1000;
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
      
     
 
@@ -65,10 +92,11 @@ body {
 }
 
 .header .menu  {
-    position: relative;
+    /* position: relative;
     top: 40%;
     right:5%;
-    float: right;
+    float: right; */
+    
 
 }
 
@@ -80,6 +108,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    z-index: 1000;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -139,7 +172,7 @@ body {
 } */
 
 #main {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     
 }
 #main div {
@@ -158,22 +191,21 @@ body {
 }
 
 #mod_der,#mod_izq {
-    display: inline-block;
+    /* display: inline-block; */
     width: 40%;
-    height: 100%;
+    /* height: 100%; */
     padding: 20px;
     margin: 5%;
 }
 
 
-#modulos h1, #modulos h2{
-    /* width: 80%;
-    height: 100%; */
+/* #modulos h1, #modulos h2{
+    
     margin: 5%;
     text-align: center;
     
 }
-
+ */
 .izq {
     float:left;
 }
@@ -250,12 +282,12 @@ body {
     color: #FF914D;
 
     background-color: rgb(247, 247, 247);;
-    width: 100%;
+    /* width: 100%; */
     height: 60px;
-    position: sticky;
+    /* position: sticky;
     top: 100%;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
     /* margin-top: auto;
     clear: both; */
     
