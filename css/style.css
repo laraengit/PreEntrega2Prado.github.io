@@ -561,16 +561,21 @@ div.checkGrande {
 #listadoLugares li.itemGuia{
     padding: 1%;
     margin: 1%;
-    height: 350px;
+    height: 350px; 
     width: 500px;
     background-color: #f3f5f1; 
+    
+    /* min-height: 100%; */
+}
+#listadoLugares li.itemGuia > div {
     display: flex;
     z-index: 1000;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    /* min-height: 100%; */
+
 }
+
 
 div.lugar iframe{
     width: 100%;
