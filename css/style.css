@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     /* font-family: sans-serif; */
+    
 }
 
 /* html{
@@ -18,6 +19,94 @@
 
     
 } */
+
+/* Responsive*/
+
+@media (max-width:700px) {
+    /* movil */
+    .headerHeight {
+        height: 80px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .videoInicio {
+        display: none;
+    }
+
+    /* .imgMainMovil{
+        justify-content: center;
+        height: auto;
+    } */
+
+    /* .hamburger {
+        display: block;
+    } */
+
+    #mod_der,#mod_izq {
+        width: 100%;
+        /* padding: 20px; */
+        margin: 2%;
+    }
+
+    
+}
+
+@media (min-width:701px) and (max-width:1199px) {
+    /* movil */
+    .headerHeight {
+        height: 40px;
+    }
+
+    #mod_der,#mod_izq {
+        width: 45%;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    /* .imgMainMovil {
+        display: none;
+    } */
+    
+}
+
+@media (min-width:1200px) {
+    /* movil */
+    .headerHeight {
+        height: 80px;
+    }
+    .hamburger {
+        display: none;
+    }
+    #mod_der,#mod_izq {
+        width: 45%;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    /* .imgMainMovil {
+        display: none;
+    } */
+    
+}
+/* @media (min-width:320) and (max-width:480) {
+    
+}
+@media (min-width:480) and (max-width:600) {
+    
+}
+@media (min-width:600) and (max-width:768) {
+    
+}
+@media (min-width:768) and (max-width:1023) {
+    
+}
+@media (min-width:1024) and (max-width:1200) {
+    
+} */
+
+
 
 /* Disposición total en GRID*/
 
@@ -71,18 +160,8 @@
 
 /* Voy por partes */
 .header {
-   /*  position: fixed;
-    top: 0; */
     background-color: #eef4f1c8;
-    /* width: 100%; */
-    height: 100px;
-    /* left: 35%; */
-	/* position: fixed; */
-	/* top:2rem;
-	width: 25%;
-	z-index: 1111 */
-    /* display: inline; */
-    /* padding: 20px; */
+    /* height: 100px; */
     display: flex;
     z-index: 1000;
     flex-direction: row;
@@ -90,15 +169,6 @@
     justify-content: space-between;
 }
 
-/* .header .menu {
-    color: aliceblue;
-} */
-
-/* .header .logo {
-    width: auto;
-    height:100%;
-    display: inline-block;
-} */
 
 .header  img{
     position: sticky;top:0;
@@ -194,26 +264,26 @@
 } */
 
 #main div {
-    width: 100%;
-    height: 600px;
+    /* width: 100%; */
+    height: 40vh;
 
     text-align: center;
     background-color:#4d7bab ;
     border: 0;
 }
 
-#main div video{
-    width: auto;
-    height: 600px;
+#main  video{
+    width: 100%;
+    height: auto;
     text-align: center;
 }
 
 #mod_der,#mod_izq {
-    /* display: inline-block; */
-    width: 40%;
-    /* height: 100%; */
+    /* width: 40%;
     padding: 20px;
-    margin: 5%;
+    margin: 5%; */
+    display: inline-block;
+    /* flex-flow: row wrap; */
 }
 
 
@@ -224,6 +294,14 @@
     
 }
  */
+
+ #modulos section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+
 .izq {
     float:left;
 }

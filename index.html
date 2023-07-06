@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Karla:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&family=Mulish&family=Noto+Sans&family=Oleo+Script&family=Open+Sans:wght@300&family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class = gridBodyInicio>
-    <header id = "encabezado" class="header gridHeader">
+    <header id = "encabezado" class="header gridHeader headerHeight">
         <img src="./images/vamos_todos_rectang-PhotoRoom.png-PhotoRoom.png" alt="Logo - Espinaca">  
-        
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <nav class = "menu">
             <ul >
                 <li><a href="./index.html" >Inicio</a></li>
@@ -27,18 +31,23 @@
     </header >
 
     <main id="main" class = "gridMain">
-        <div>
-            <video src="./images/vamos_todos.mp4" autoplay loop>
-            </video>
-        </div>
+        <!-- <div class="imgMainMovil">
+            <img src="./images/vamos_todos_rectang-fotor-bg-remover-2023060919394.png" alt="logo sitio web vamos todos">
+
+        </div> -->
+        <video src="./images/vamos_todos.mp4" autoplay loop>
+        </video>
+        <!-- <div class="videoInicio">
+            
+        </div> -->
     </main>
 
     <section id="modulos" class = "gridSection">
-        <div id = "mod_izq" class="izq verdeClaro redondo">
+        <div id = "mod_izq" class="verdeClaro redondo">
             <h1 class="destacado1">Vamos todos</h1>
             <h2 class="destacado2">Donde buscar y validar lugares con accesibilidad abierta.</h2>
         </div>
-        <div id = "mod_der" class = "der">
+        <div id = "mod_der" >
             <h2 class="destacado2"> ¿Qué estás buscando?</h2>
             <div class="botones">
                 <a href="./paginas/validar.html" class = "verde hoverBoton ">Validar</a>
