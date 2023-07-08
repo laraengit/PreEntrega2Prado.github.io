@@ -10,22 +10,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Karla:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&family=Mulish&family=Noto+Sans&family=Oleo+Script&family=Open+Sans:wght@300&family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <header id = "encabezado" class="header">
-        <img src="../images/vamos_todos_rectang-PhotoRoom.png-PhotoRoom.png" alt="Logo - Espinaca">  
-        <!-- <div class = "logo"> 
-            
-        </div> -->
-        <nav class = "menu">
-            <ul >
-                <li><a href="../index.html" >Inicio</a></li>
-                <li><a href="./validar.html" >Validar</a></li>
-                <li><a href="./guia.html" >Guía de lugares</a></li>
-                <li><a href="./info.html" >+Info</a></li>
-                <li><a href="./contacto.html" >Contacto</a></li>
-            </ul>
-        </nav>
+    <header id = "encabezado" class="gridHeader headerHeight">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  py-3">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../images/vamos_todos_rectang-PhotoRoom.png-PhotoRoom.png" alt="Vamos Todos Logo" width=" auto" height="80">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  bordeLink "  href="../index.html" >Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active bordeLink" aria-current="page" href="./validar.html" >Validar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  bordeLink"  href="./guia.html" >Guía de lugares</a>
+                    </li class="nav-item">
+                    <li>
+                        <a class="nav-link  bordeLink"  href="./info.html" >+Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bordeLink" href="./contacto.html" >Contacto</a>
+                    </li>
+
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+
     </header >
     <main id = "main">
         <h1 class="destacado1">Validá sitios</h1>
@@ -142,6 +162,6 @@
         </div>
     
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
