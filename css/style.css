@@ -31,15 +31,6 @@
         display: none;
     }
 
-    .videoInicio {
-        display: none;
-    }
-
-    /* .imgMainMovil{
-        justify-content: center;
-        height: auto;
-    } */
-
     /* .hamburger {
         display: block;
     } */
@@ -48,6 +39,13 @@
         width: 100%;
         /* padding: 20px; */
         margin: 2%;
+    }
+
+    .destacado2{
+        font-size: 15pt;
+    }
+    .destacado1{
+        font-size: 30pt;
     }
 
     
@@ -64,11 +62,28 @@
         padding: 1%;
         margin: 2%;
     }
+    .destacado2{
+        font-size: 20pt;
+    }
+    .destacado1{
+        font-size: 40pt;
+    }
 
-    /* .imgMainMovil {
+    /* hamburguesa*/
+    /* .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      } */
+      .header .menu-icon {
         display: none;
-    } */
-    
+      }   
 }
 
 @media (min-width:1200px) {
@@ -85,9 +100,28 @@
         margin: 2%;
     }
 
-    /* .imgMainMovil {
+    .destacado2{
+        font-size: 30pt;
+    }
+    .destacado1{
+        font-size: 50pt;
+    }
+
+    /* hamburguesa*/
+    /* .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      } */
+      .header .menu-icon {
         display: none;
-    } */
+      }   
     
 }
 /* @media (min-width:320) and (max-width:480) {
@@ -159,24 +193,22 @@
 }
 
 /* Voy por partes */
-.header {
+/* .header {
     background-color: #eef4f1c8;
-    /* height: 100px; */
     display: flex;
     z-index: 1000;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
 
-.header  img{
+/* .header  img{
     position: sticky;top:0;
     width: auto;
     height:100%;
-    /* display: inline; */
     float : left;
-}
+} */
 
 /* .header .menu  {
     position: relative;
@@ -242,6 +274,84 @@
  a:hover{
     border-bottom:2px solid;
 }
+
+
+/* Menu hamburguesa */
+.header .menuh {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    z-index: 100;
+}
+
+.header .menu-btn:hover {
+    /* chequear */
+    border-bottom:2px solid;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    /* float: right; */
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menuh {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
 
 /* #encabezado .al {
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -311,13 +421,13 @@
 .destacado1 {
     text-align: center;
     font-family: 'Oleo Script', cursive;
-    font-size: 60pt;
+    /* font-size: 60pt; */
     color:  #FF914D;
 }
 .destacado2 {
     text-align: center;
     font-family: 'Oleo Script', cursive;
-    font-size: 30pt;
+    /* font-size: 30pt; */
     color: #FDAFC2;
 }
 
