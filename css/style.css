@@ -27,9 +27,9 @@
     .headerHeight {
         height: 80px;
     }
-    .menu {
+    /* .menu {
         display: none;
-    }
+    } */
 
     /* .hamburger {
         display: block;
@@ -48,11 +48,21 @@
         font-size: 30pt;
     }
 
+    div.logo, div.copyright {
+        display: none;
+    }
+
+    .pie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     
 }
 
 @media (min-width:701px) and (max-width:1199px) {
-    /* movil */
+
     .headerHeight {
         height: 40px;
     }
@@ -69,21 +79,6 @@
         font-size: 40pt;
     }
 
-    /* hamburguesa*/
-    /* .header li {
-        float: left;
-      }
-      .header li a {
-        padding: 20px 30px;
-      }
-      .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-      } */
-      .header .menu-icon {
-        display: none;
-      }   
 }
 
 @media (min-width:1200px) {
@@ -106,22 +101,7 @@
     .destacado1{
         font-size: 50pt;
     }
-
-    /* hamburguesa*/
-    /* .header li {
-        float: left;
-      }
-      .header li a {
-        padding: 20px 30px;
-      }
-      .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-      } */
-      .header .menu-icon {
-        display: none;
-      }   
+ 
     
 }
 /* @media (min-width:320) and (max-width:480) {
@@ -219,11 +199,7 @@
 
 }
  */
-.header .menu ul {
-    /* display: table; 
-	list-style-type: none;
-	width:60%;
-    display: inline; */
+/* .header .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -233,26 +209,20 @@
     align-items: center;
     justify-content: space-evenly;
 
-}
+} */
 
-.header .menu li {
-/* 	display: table-cell;
-	text-align: right;
-    display: inline; */
+/* .header .menu li {
     display: inline;
     margin-left: 10px;
   
 
-}
+} */
 
-.header .menu li a {
-   /*  border:2px solid; */
+/* .header .menu li a {
+
    color: #7bbfbf;
    color: #6bba49;
-	/* color:#FDAFC2;
-    color: #7ED957;
-    color: #FF914D;
- */
+
 
     font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
@@ -260,7 +230,7 @@
 	padding: 10px 10px;
 	text-decoration: none;
     
-}
+} */
 
 /* #encabezado .menu .al {
     
@@ -271,88 +241,9 @@
     font-size: 20;
 } */
 
- a:hover{
-    border-bottom:2px solid;
+ .bordeLink:hover {
+    border-bottom:2px solid ;
 }
-
-
-/* Menu hamburguesa */
-.header .menuh {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    z-index: 100;
-}
-
-.header .menu-btn:hover {
-    /* chequear */
-    border-bottom:2px solid;
-}
-
-.menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    /* float: right; */
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-
-.menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-}
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menuh {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-
 /* #encabezado .al {
     font-family: 'Be Vietnam Pro', sans-serif;
     display: inline-block;
@@ -373,19 +264,19 @@
     
 } */
 
-#main div {
+#main {
     /* width: 100%; */
-    height: 40vh;
-
-    text-align: center;
-    background-color:#4d7bab ;
-    border: 0;
+    display: flex;
 }
 
 #main  video{
     width: 100%;
     height: auto;
     text-align: center;
+}
+
+#mandarAtras {
+    z-index: -1;
 }
 
 #mod_der,#mod_izq {
@@ -490,12 +381,7 @@
     background-color: rgb(247, 247, 247);;
     /* width: 100%; */
     height: 60px;
-    /* position: sticky;
-    top: 100%;
-    padding-left: 10px;
-    padding-right: 10px; */
-    /* margin-top: auto;
-    clear: both; */
+   
     
     
 
@@ -503,6 +389,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 
     /* padding: 10px; */
     
