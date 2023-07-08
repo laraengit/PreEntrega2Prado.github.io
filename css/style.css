@@ -49,14 +49,9 @@
     }
 
     div.logo, div.copyright {
-        display: none;
+        visibility: hidden;
     }
 
-    .pie {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     
     
 }
@@ -381,9 +376,6 @@
     background-color: rgb(247, 247, 247);;
     /* width: 100%; */
     height: 60px;
-   
-    
-    
 
     display: flex;
     flex-direction: row;
@@ -404,9 +396,6 @@
 .pie .logo img{
     width: auto;
     height:50px; 
-    /* display: inline;
-    float: left;
- */
 }
 
 
