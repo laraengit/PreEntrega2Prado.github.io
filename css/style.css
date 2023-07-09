@@ -13,6 +13,8 @@
     .headerHeight {
         height: 80px;
     }
+
+   
     /* .menu {
         display: none;
     } */
@@ -188,11 +190,12 @@
     width: 100%;
     /* height:100vh; */
     grid-template-areas:
-    "encabezado  encabezado"
-    "principal principal "
-    "seccion seccion"
-    "pie pie";
-    grid-template-columns:1fr 1fr;
+    "encabezado  "
+    "principal  "
+    "seccion "
+    "sponsors"
+    "pie ";
+    grid-template-columns: 1fr;
 }
 .gridHeader {
     grid-area: encabezado;
@@ -202,6 +205,10 @@
 }
 .gridSection {
     grid-area: seccion;
+}
+.gridSponsors{
+    grid-area: sponsors;
+
 }
 
 .gridFooter {
