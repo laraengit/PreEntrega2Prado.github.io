@@ -52,14 +52,41 @@
         visibility: hidden;
     }
 
+    .botones a{
+        font-size: 60%;
+    }
+
+    .separaSecc {
+        font-size: 15pt;
+    }
+    .separaSecc2 {
+        font-size: 12pt;
+    }
     
+    .separaSeccVerde {
+        font-size: 14pt;
+    }
     
+    .separaSecc3Negra {
+        font-size: 12pt;
+    }
+
+    .input input{
+        font-size: 100%;
+    }
+
+    .pie {
+        font-size: 70%;
+    }
+    .apartLetra {
+        font-size: 80%;;
+    }
 }
 
 @media (min-width:701px) and (max-width:1199px) {
 
     .headerHeight {
-        height: 40px;
+        height: 80px;
     }
 
     #mod_der,#mod_izq {
@@ -72,6 +99,35 @@
     }
     .destacado1{
         font-size: 40pt;
+    }
+    .botones a{
+        font-size: 80%;
+    }
+
+    .separaSecc {
+        font-size: 18pt;
+    }
+    .separaSecc2 {
+        font-size: 13pt;
+    }
+    
+    .separaSeccVerde {
+        font-size: 16pt;
+    }
+    
+    .separaSecc3Negra {
+        font-size: 13pt;
+    }
+
+    .input input{
+        font-size: 100%;
+    }
+
+    .pie {
+        font-size: 80%;
+    }
+    .apartLetra {
+        font-size: 100%;;
     }
 
 }
@@ -96,7 +152,35 @@
     .destacado1{
         font-size: 50pt;
     }
- 
+    .botones a{
+        font-size: 80%;
+    }
+
+    .separaSecc {
+        font-size: 20pt;
+    }
+    .separaSecc2 {
+        font-size: 14pt;
+    }
+    
+    .separaSeccVerde {
+        font-size: 18pt;
+    }
+    
+    .separaSecc3Negra {
+        font-size: 14pt;
+    }
+
+    .input input{
+        font-size: 100%;
+    }
+
+    .pie {
+        font-size: 80%;
+    }
+    .apartLetra {
+        font-size: 100%;;
+    }
     
 }
 /* @media (min-width:320) and (max-width:480) {
@@ -259,7 +343,7 @@
     
 } */
 
-#main {
+#main .inicio{
     /* width: 100%; */
     display: flex;
 }
@@ -324,7 +408,7 @@
     border-radius: 10px;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
-	font-size: 100%;
+	/* font-size: 100%; */
     font-weight:bold;
     color: aliceblue;
     text-align: center;
@@ -369,7 +453,7 @@
 
 .pie {
     font-family: 'Open Sans', sans-serif;
-	font-size: 80%;
+	/* font-size: 80%; */
     font-weight:bold;
     color: #FF914D;
 
@@ -383,7 +467,7 @@
     justify-content: space-between;
     text-align: center;
 
-    /* padding: 10px; */
+    padding: 10px;
     
 }
 
@@ -451,7 +535,7 @@
 
 .input input{
     font-family: 'Karla', sans-serif;
-	font-size: 100%;
+	/* font-size: 100%; */
     font-weight: 100;
     
     padding: 10px;
@@ -490,34 +574,34 @@
 .separaSecc {
     text-align: center;
     font-family: 'Mulish', sans-serif;
-    font-size: 20pt;
+    /* font-size: 20pt; */
     color: #e4ece8;
 }
 .separaSecc2 {
     text-align: left;
     font-family: 'Mulish', sans-serif;
-    font-size: 14pt;
+    /* font-size: 14pt; */
     color: #e4ece8;
 }
 
 .separaSeccVerde {
     text-align: left;
     font-family: 'Mulish', sans-serif;
-    font-size: 18pt;
+    /* font-size: 18pt; */
     color:#6bba49;
 }
 
 .separaSecc3Negra {
     text-align: left;
     font-family: 'Mulish', sans-serif;
-    font-size: 14pt;
+    /* font-size: 14pt; */
     color:#222b2b;
 }
 
 
 .apartLetra {
     font-family: 'Karla', sans-serif;
-	font-size: 100%;
+	/* font-size: 100%; */
     font-weight: 100;
 }
 
@@ -583,14 +667,22 @@ div.checkGrande {
    /*  margin-left: 25%; */
     text-align: center;
     background-color: #7bbfbf;
+    
+
+}
+
+#main .filtros ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 
 #main nav.filtros li.filtra{
     width:auto;
-    margin: 1% 5%;
+    /* margin: 1% 5%; */
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
 }
 
@@ -598,7 +690,7 @@ div.checkGrande {
     /* width:auto; */
     margin: 1% 5%;
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
 }
 
@@ -621,7 +713,9 @@ div.checkGrande {
 .lugar {
     margin: 10px;
 }
-
+#listadoLugares > ul {
+    padding: 0;
+}
 #listadoLugares li.itemGuia{
     padding: 1%;
     margin: 1%;
